@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Serra &amp; Solda | Portões de Alumínio em Serrinha-BA</title>
+<meta name="description" content="Serralheria Serra & Solda: 30 anos de tradição em Serrinha e região. Portões de alumínio branco, preto e amadeirado, grades, estruturas metálicas e projetos personalizados.">
+<link rel="icon" href="img/logo-laranja.svg" type="image/svg+xml">
+<meta property="og:title" content="Serra &amp; Solda | Portões de Alumínio em Serrinha-BA">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:description" content="30 anos de tradição e segurança. Portões de alumínio que não enferrujam.">
+<!-- IMPORTANTE: troque por URL absoluta quando o domínio estiver no ar, ex.: https://seudominio.com.br/img/og.jpg -->
+<meta property="og:image" content="img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="theme-color" content="#f4f1ec">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f1ec; --card:#ebe6df; --card2:#e4ded5; --ink:#1c1b1a; --muted:#6d6862;
+  --line:#d9d2c8; --accent:#cf4f31; --accent-btn:#bf4426; --accent-dk:#a63a1f; --accent-text:#b03f1f; --dark:#1c1b1a;
+  --r:18px; --max:1200px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+[id]{scroll-margin-top:92px}
+body{font-family:'Manrope',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-text);font-weight:600}
+.dot{color:var(--accent)}
+h1,h2,h3{font-weight:500;letter-spacing:-.025em;line-height:1.05}
+h2{font-size:clamp(32px,4vw,48px)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 24px;border-radius:10px;font-weight:600;font-size:15px;transition:.2s}
+.btn-primary{background:var(--accent-btn);color:#fff;box-shadow:0 8px 24px -10px rgba(207,79,49,.7)}
+.btn-primary:hover{background:var(--accent-dk);transform:translateY(-1px)}
+.btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.btn-ghost:hover{border-color:var(--ink)}
+.arrow{transition:transform .2s}.btn:hover .arrow{transform:translateX(3px)}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:50;background:rgba(244,241,236,.85);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:.2s}
+header.scrolled{border-bottom-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand img{height:34px;width:auto}
+.brand span{font-weight:700;font-size:19px;letter-spacing:-.02em}
+.brand small{display:block;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:-2px}
+.menu{display:flex;gap:34px;font-size:14px;font-weight:500}
+.menu a:hover{color:var(--accent)}
+.nav .btn{padding:11px 18px;font-size:14px}
+
+/* HERO */
+.hero{padding:56px 0 72px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(42px,5vw,68px);margin:22px 0 24px}
+.hero p.lead{font-size:18px;color:var(--muted);max-width:470px}
+.hero-ctas{display:flex;gap:12px;margin:34px 0 52px;flex-wrap:wrap}
+.stats{display:flex;gap:0}
+.stat{padding:0 30px;border-left:1px solid var(--line)}
+.stat:first-child{padding-left:0;border-left:0}
+.stat b{display:block;font-size:30px;font-weight:600;letter-spacing:-.03em}
+.stat span{font-size:13px;color:var(--muted)}
+.hero-visual{position:relative;aspect-ratio:1/1.08;border-radius:28px;background:
+  radial-gradient(120% 80% at 30% 20%,#fff 0%,rgba(255,255,255,0) 60%),
+  linear-gradient(160deg,#ece6dd 0%,#ddd5ca 100%);overflow:hidden}
+.hero-visual::before{content:"";position:absolute;inset:0;background:
+  repeating-linear-gradient(90deg,rgba(0,0,0,.025) 0 1px,transparent 1px 46px)}
+.hero-visual img.main{position:absolute;left:50%;top:50%;transform:translate(-50%,-46%);height:84%;width:auto;max-width:none;filter:drop-shadow(0 30px 40px rgba(60,40,20,.22));z-index:1}
+.glow{position:absolute;bottom:-60px;left:15%;width:70%;height:120px;background:radial-gradient(closest-side,rgba(207,79,49,.35),transparent);filter:blur(10px)}
+.badge{z-index:3;position:absolute;top:7%;left:7%;width:86px;height:86px;border-radius:20px;background:linear-gradient(145deg,#e0694a,#c2441f);display:grid;place-items:center;box-shadow:0 18px 36px -12px rgba(207,79,49,.8),inset 0 1px 0 rgba(255,255,255,.35);transform:rotate(-8deg)}
+.badge img{width:56px}
+.vertical{z-index:3;position:absolute;right:6%;top:9%;font-size:11px;letter-spacing:.3em;line-height:2.1;color:var(--muted);text-transform:uppercase;font-weight:600}
+.vertical i{display:block;width:1px;height:46px;background:var(--muted);margin-top:10px;opacity:.5}
+
+/* ACABAMENTOS */
+.finishes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.finish{background:var(--card);border-radius:var(--r);padding:26px;display:flex;justify-content:space-between;min-height:270px;position:relative;overflow:hidden;transition:.25s}
+.finish:hover{transform:translateY(-4px);box-shadow:0 20px 40px -24px rgba(0,0,0,.3)}
+.finish .txt{position:relative;z-index:2;display:flex;flex-direction:column;max-width:48%}
+.finish h3{font-size:24px}
+.finish p{font-size:13.5px;color:var(--muted);margin-top:10px}
+.finish .num{color:var(--accent-text);font-size:13px;font-weight:600;margin-bottom:14px}
+.finish .circle{margin-top:auto;width:38px;height:38px;border-radius:50%;border:1.5px solid var(--ink);display:grid;place-items:center}
+.swatch{position:absolute;right:0;top:0;bottom:0;width:50%;background-image:url(img/cores-portao.webp);background-size:300% auto;background-repeat:no-repeat;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 35%);mask-image:linear-gradient(90deg,transparent,#000 35%)}
+.sw-preto{background-position:2% 50%}
+.sw-madeira{background-position:50% 50%}
+.sw-branco{background-position:96% 50%}
+.section{padding:96px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:40px}
+.section-head p{color:var(--muted);max-width:420px}
+.note{font-size:12px;color:var(--muted);margin-top:16px}
+
+/* VANTAGENS */
+.why{display:grid;grid-template-columns:1fr;gap:48px}
+.why-intro{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end}
+.why-intro p{color:var(--muted);font-size:16px;max-width:440px;margin-bottom:14px}
+.mt{margin-top:16px}
+.self-start{align-self:start;margin-top:4px}
+.foot-left{display:flex;align-items:center}
+.why-intro a.link{font-size:14px;font-weight:600;border-bottom:1px solid var(--ink);padding-bottom:2px}
+.why-intro a.link:hover{color:var(--accent);border-color:var(--accent)}
+.adv{display:grid;grid-template-columns:repeat(5,1fr)}
+.adv-item{padding:0 24px;border-left:1px solid var(--line)}
+.adv-item .n{font-size:40px;color:var(--accent);font-weight:400;letter-spacing:-.03em}
+.adv-item .tick{width:1px;height:20px;background:var(--accent);margin:12px 0 18px;position:relative}
+.adv-item .tick::after{content:"";position:absolute;bottom:-1px;left:-3px;width:7px;height:7px;border-right:1px solid var(--accent);border-bottom:1px solid var(--accent);transform:rotate(45deg)}
+.adv-item h3{font-size:16px;font-weight:600;letter-spacing:-.01em;margin-bottom:8px}
+.adv-item p{font-size:13.5px;color:var(--muted)}
+
+/* FAIXA IMAGEM */
+.band{background:linear-gradient(180deg,#fff 0%,var(--card) 100%);border-radius:28px;padding:56px 48px 40px;position:relative;overflow:hidden}
+.band-top{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:28px}
+.band-top p{color:var(--muted);max-width:380px}
+.band img{width:100%;filter:drop-shadow(0 24px 30px rgba(0,0,0,.18))}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+.chip{background:#fff;border:1px solid var(--line);padding:8px 14px;border-radius:99px;font-size:13px;font-weight:500;display:flex;align-items:center;gap:8px}
+.chip i{width:12px;height:12px;border-radius:50%;display:inline-block;border:1px solid rgba(0,0,0,.15)}
+
+/* SERVIÇOS */
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.svc{background:var(--card);border-radius:var(--r);padding:28px;min-height:230px;display:flex;flex-direction:column;transition:.25s}
+.svc:hover{background:#fff;box-shadow:0 20px 40px -26px rgba(0,0,0,.35)}
+.svc .ic{width:52px;height:52px;border-radius:14px;background:#fff;display:grid;place-items:center;margin-bottom:auto;color:var(--accent);box-shadow:0 1px 0 rgba(0,0,0,.04)}
+.svc:hover .ic{background:var(--accent);color:#fff}
+.svc h3{font-size:20px;margin-top:40px}
+.svc p{font-size:13.5px;color:var(--muted);margin-top:8px}
+
+/* CONTATO */
+.contact{display:grid;grid-template-columns:1fr 1.15fr;gap:20px}
+.info{background:#fff;border-radius:var(--r);padding:38px;display:flex;flex-direction:column;gap:26px}
+.info-row{display:flex;gap:16px}
+.info-row .ic{flex:none;width:42px;height:42px;border-radius:12px;background:var(--bg);display:grid;place-items:center;color:var(--accent)}
+.info-row small{display:block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:3px}
+.info-row div{font-size:15.5px}
+.info-row a:hover{color:var(--accent)}
+.hours{display:grid;grid-template-columns:auto auto;gap:2px 22px}
+.hours span:nth-child(odd){color:var(--muted)}
+.map{border-radius:var(--r);overflow:hidden;min-height:440px;background:var(--card);position:relative}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.35) contrast(1.02)}
+.map .open{position:absolute;left:16px;bottom:16px;z-index:2}
+
+/* CTA */
+.cta{background:var(--dark);color:#fff;border-radius:28px;padding:64px 56px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;position:relative;overflow:hidden}
+.cta h2{font-size:clamp(32px,4vw,46px)}
+.cta p{color:#b4aea6;margin:16px 0 30px;max-width:440px}
+.cta::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.04) 0 2px,transparent 2px 22px)}
+.cta > *{position:relative}
+.cta-mark{justify-self:end;width:220px;height:220px;border-radius:44px;background:linear-gradient(145deg,#e46d4d,#b93e1c);display:grid;place-items:center;transform:rotate(-10deg);box-shadow:0 40px 70px -20px rgba(207,79,49,.65),inset 0 2px 0 rgba(255,255,255,.3)}
+.cta-mark img{width:150px}
+
+/* FOOTER */
+footer{padding:48px 0 40px}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}
+.foot .tag{font-size:13px;color:var(--muted);margin-left:18px}
+.foot nav{display:flex;gap:28px;font-size:13px}
+.foot nav a:hover{color:var(--accent)}
+.social{display:flex;gap:16px}
+.social a{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center}
+.social a:hover{border-color:var(--accent);color:var(--accent)}
+.legal{border-top:1px solid var(--line);margin-top:32px;padding-top:22px;font-size:12px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.legal a{text-decoration:underline}
+
+/* WHATSAPP FLUTUANTE */
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 12px 28px -8px rgba(37,211,102,.7);transition:.2s}
+.wa-float:hover{transform:scale(1.07)}
+
+/* REVEAL */
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
+
+/* RESPONSIVO */
+@media (max-width:1024px){
+  .menu{display:none}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-visual{max-width:560px;width:100%;margin:0 auto}
+  .finishes{grid-template-columns:1fr}
+  .why-intro{grid-template-columns:1fr;gap:20px}
+  .adv{grid-template-columns:repeat(2,1fr);row-gap:36px}
+  .services{grid-template-columns:repeat(2,1fr)}
+  .contact{grid-template-columns:1fr}
+  .cta{grid-template-columns:1fr;gap:40px}
+  .cta-mark{justify-self:start;width:140px;height:140px;border-radius:30px}
+  .cta-mark img{width:96px}
+}
+@media (max-width:600px){
+  .wrap{padding:0 20px}
+  .nav .btn .label{display:none}
+  .brand small{display:none}
+  .stat{padding:0 14px}
+  .stat b{font-size:22px}
+  .stat span{font-size:12px}
+  .section{padding:72px 0}
+  .section-head,.band-top{flex-direction:column;align-items:start}
+  .adv{grid-template-columns:1fr}
+  .services{grid-template-columns:1fr}
+  .band{padding:36px 22px 28px}
+  .cta{padding:44px 28px}
+  .info{padding:28px}
+  .foot .tag{display:none}
+}
+@media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"Serralheria Serra & Solda",
+"description":"Portões de alumínio, grades, estruturas metálicas e projetos personalizados em Serrinha e região.",
+"telephone":"+55 75 99127-2504","image":"img/og.jpg",
+"address":{"@type":"PostalAddress","streetAddress":"BA-411, 998, Bairro dos Treze","addressLocality":"Serrinha","addressRegion":"BA","postalCode":"48700-000","addressCountry":"BR"},
+"geo":{"@type":"GeoCoordinates","latitude":-11.650820882846878,"longitude":-39.01055082323714},
+"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"12:00"}],
+"sameAs":["https://www.instagram.com/serraesolda/","https://maps.app.goo.gl/7VfozVdhZ8KywqWR7"],"areaServed":"Serrinha e região"}
+</script>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="Serra &amp; Solda, voltar ao início">
+      <img src="img/logo-laranja.svg" alt="">
+      <div><span>Serra &amp; Solda</span><small>Serralheria · Serrinha-BA</small></div>
+    </a>
+    <nav class="menu">
+      <a href="#portoes">Portões</a>
+      <a href="#vantagens">Vantagens</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <a class="btn btn-primary" aria-label="Pedir orçamento pelo WhatsApp" href="https://wa.me/5575991272504?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+      <span class="label">Pedir orçamento</span>
+    </a>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Serrinha e região · 30 anos de tradição</div>
+      <h1>Portões de alumínio que não enferrujam<span class="dot">.</span></h1>
+      <p class="lead">Tradição e segurança em portões, grades, estruturas metálicas e projetos personalizados. Leve, bonito e feito para durar.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://wa.me/5575991272504?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20port%C3%A3o%20de%20alum%C3%ADnio." target="_blank" rel="noopener">Orçamento pelo WhatsApp <span class="arrow">→</span></a>
+        <a class="btn btn-ghost" href="#portoes">Ver acabamentos</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b>30 anos</b><span>de tradição</span></div>
+        <div class="stat"><b>3×</b><span>mais leve que o ferro</span></div>
+        <div class="stat"><b>3</b><span>acabamentos</span></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="badge"><img src="img/logo-branco.svg" alt=""></div>
+      <img class="main" src="img/portoes-acabamentos.webp" alt="Portões de alumínio nos acabamentos branco, amadeirado e preto" width="1196" height="1400">
+      <div class="glow"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ACABAMENTOS -->
+<section class="wrap" id="portoes">
+  <div class="finishes">
+    <article class="finish reveal">
+      <div class="txt"><span class="num">01</span><h3>Preto</h3><p>Moderno e sóbrio. Combina com fachadas contemporâneas.</p><a class="circle" href="#contato" aria-label="Pedir orçamento do portão preto">→</a></div>
+      <div class="swatch sw-preto"></div>
+    </article>
+    <article class="finish reveal">
+      <div class="txt"><span class="num">02</span><h3>Amadeirado</h3><p>O aconchego da madeira, em vários tons, sem a manutenção dela.</p><a class="circle" href="#contato" aria-label="Pedir orçamento do portão amadeirado">→</a></div>
+      <div class="swatch sw-madeira"></div>
+    </article>
+    <article class="finish reveal">
+      <div class="txt"><span class="num">03</span><h3>Branco</h3><p>Claro e elegante. Deixa a fachada leve e iluminada.</p><a class="circle" href="#contato" aria-label="Pedir orçamento do portão branco">→</a></div>
+      <div class="swatch sw-branco"></div>
+    </article>
+  </div>
+</section>
+
+<!-- VANTAGENS -->
+<section class="section" id="vantagens">
+  <div class="wrap why">
+    <div class="why-intro reveal">
+      <div><div class="eyebrow">Por que alumínio</div>
+      <h2 class="mt">Bonito hoje,<br>inteiro amanhã<span class="dot">.</span></h2></div>
+      <div><p>Durabilidade, leveza e baixa manutenção em comparação com materiais tradicionais como o ferro.</p>
+      <a class="link" href="#contato">Fale com a gente →</a></div>
+    </div>
+    <div class="adv">
+      <div class="adv-item reveal"><div class="n">01</div><div class="tick"></div><h3>Não enferruja</h3><p>Metal não ferroso, cria uma camada natural contra a oxidação. Resiste bem a chuva e umidade.</p></div>
+      <div class="adv-item reveal"><div class="n">02</div><div class="tick"></div><h3>Material leve</h3><p>Cerca de 3× mais leve que o ferro: abre fácil e poupa o motor do portão automático.</p></div>
+      <div class="adv-item reveal"><div class="n">03</div><div class="tick"></div><h3>Baixa manutenção</h3><p>Sem lixar, sem zarcão. Com pintura eletrostática, o acabamento dura anos sem desbotar.</p></div>
+      <div class="adv-item reveal"><div class="n">04</div><div class="tick"></div><h3>Estética e variedade</h3><p>Modelos, cores e acabamentos amadeirados que valorizam a fachada.</p></div>
+      <div class="adv-item reveal"><div class="n">05</div><div class="tick"></div><h3>Fácil limpeza</h3><p>A sujeira não impregna com facilidade no material.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAIXA -->
+<section class="wrap">
+  <div class="band reveal">
+    <div class="band-top">
+      <div>
+        <div class="eyebrow">Sob medida</div>
+        <h2 class="mt">Portões e gradis para a sua fachada</h2>
+      </div>
+      <p>Projetamos e instalamos de acordo com o espaço e o estilo do seu imóvel, seja residencial ou comercial.</p>
+    </div>
+    <img src="img/gradil-preto.webp" alt="Gradil de alumínio preto com lâminas horizontais" width="1785" height="565" loading="lazy">
+    <div class="chips">
+      <span class="chip"><i style="background:#fff"></i>Branco</span>
+      <span class="chip"><i style="background:#1c1b1a"></i>Preto</span>
+      <span class="chip"><i style="background:linear-gradient(90deg,#b8642e,#d98b4a,#8a4a22)"></i>Amadeirado (vários tons)</span>
+    </div>
+    <p class="note">*Imagens ilustrativas.</p>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="section" id="servicos">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div><div class="eyebrow">O que fazemos</div><h2 class="mt">Serviços</h2></div>
+      <p>Do portão da sua casa à estrutura da sua obra, com o cuidado de quem faz isso há 30 anos.</p>
+    </div>
+    <div class="services">
+      <div class="svc reveal">
+        <div class="ic"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 8h18M3 12h18M3 16h18M12 4v16"/></svg></div>
+        <h3>Portões</h3><p>Portões de alumínio e metal sob medida, com acabamento que valoriza a fachada.</p>
+      </div>
+      <div class="svc reveal">
+        <div class="ic"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M3 4h18M3 20h18M6 4v16M10 4v16M14 4v16M18 4v16"/></svg></div>
+        <h3>Grades</h3><p>Proteção para janelas, portas, muros e varandas, sem abrir mão da estética.</p>
+      </div>
+      <div class="svc reveal">
+        <div class="ic"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M3 20h18M5 20V9l7-5 7 5v11M5 9h14M9 20v-6h6v6"/><path d="M8 9l4 5 4-5"/></svg></div>
+        <h3>Estruturas metálicas</h3><p>Estruturas sob medida para residências, comércios e obras.</p>
+      </div>
+      <div class="svc reveal">
+        <div class="ic"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M4 20l4-1L19 8a2.1 2.1 0 0 0-3-3L5 16l-1 4z"/><path d="M14 7l3 3"/></svg></div>
+        <h3>Projetos personalizados</h3><p>Tem uma ideia? A gente desenha e executa sob medida para você.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section class="wrap" id="contato">
+  <div class="section-head reveal">
+    <div><div class="eyebrow">Onde estamos</div><h2 class="mt">Visite a serralheria</h2></div>
+    <p>Atendimento em Serrinha e região. Chame no WhatsApp para orçamento ou visita.</p>
+  </div>
+  <div class="contact">
+    <div class="info reveal">
+      <div class="info-row"><div class="ic"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
+        <div><small>Endereço</small>BA-411, 998, Bairro dos Treze<br>Serrinha - BA, 48700-000</div></div>
+      <div class="info-row"><div class="ic"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <div><small>Horário</small><div class="hours"><span>Seg a sex</span><span>8h às 18h</span><span>Sábado</span><span>9h às 12h</span></div></div></div>
+      <div class="info-row"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg></div>
+        <div><small>WhatsApp · Edilson Damasceno</small><a href="https://wa.me/5575991272504" target="_blank" rel="noopener">(75) 99127-2504</a></div></div>
+      <div class="info-row"><div class="ic"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></div>
+        <div><small>Instagram</small><a href="https://www.instagram.com/serraesolda/" target="_blank" rel="noopener">@serraesolda</a></div></div>
+      <a class="btn btn-primary self-start" href="https://wa.me/5575991272504?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Pedir orçamento <span class="arrow">→</span></a>
+    </div>
+    <div class="map reveal">
+      <iframe title="Mapa da Serra &amp; Solda em Serrinha-BA" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=-11.650820882846878,-39.01055082323714&z=16&output=embed"></iframe>
+      <a class="btn btn-ghost open" href="https://maps.app.goo.gl/7VfozVdhZ8KywqWR7" target="_blank" rel="noopener">Abrir no Google Maps <span class="arrow">↗</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <div class="wrap">
+    <div class="cta reveal">
+      <div>
+        <h2>Pronto para trocar<br>o seu portão<span class="dot">?</span></h2>
+        <p>Fale conosco e receba seu orçamento personalizado!</p>
+        <a class="btn btn-primary" href="https://wa.me/5575991272504?text=Ol%C3%A1!%20Quero%20trocar%20meu%20port%C3%A3o.%20Pode%20me%20passar%20um%20or%C3%A7amento%3F" target="_blank" rel="noopener">Chamar no WhatsApp <span class="arrow">→</span></a>
+      </div>
+      <div class="cta-mark"><img src="img/logo-branco.svg" alt=""></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="foot-left">
+        <a href="#top" class="brand"><img src="img/logo-laranja.svg" alt=""><span>Serra &amp; Solda</span></a>
+        <span class="tag">Serrinha e região — 30 anos de tradição e segurança.</span>
+      </div>
+      <nav><a href="#portoes">Portões</a><a href="#vantagens">Vantagens</a><a href="#servicos">Serviços</a><a href="#contato">Contato</a></nav>
+      <div class="social">
+        <a href="https://www.instagram.com/serraesolda/" target="_blank" rel="noopener" aria-label="Instagram"><svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+        <a href="https://wa.me/5575991272504" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg></a>
+        <a href="https://maps.app.goo.gl/7VfozVdhZ8KywqWR7" target="_blank" rel="noopener" aria-label="Google Maps"><svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© <span id="ano">2026</span> Serralheria Serra &amp; Solda · Serrinha - BA</span>
+      <span>Site por <a href="https://wa.me/5575992799894" target="_blank" rel="noopener">Tallis do Carmo</a></span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5575991272504?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+</a>
+
+<script>
+  document.getElementById('ano').textContent = new Date().getFullYear();
+  const h = document.querySelector('header');
+  addEventListener('scroll', () => h.classList.toggle('scrolled', scrollY > 10), {passive:true});
+  const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), {threshold:.12}) : null;
+  document.querySelectorAll('.reveal').forEach((el, i) => {
+    el.style.transitionDelay = (i % 5) * 70 + 'ms';
+    io ? io.observe(el) : el.classList.add('in');
+  });
+</script>
+</body>
+</html>
